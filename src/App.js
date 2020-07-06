@@ -2,23 +2,22 @@ import React, { Component } from "react";
 
 
 import "./App.css";
-import Image1 from 'react-svg-loader!../public/images/ironhack-logo.svg';
-import Image2 from 'react-svg-loader!../public/images/menu-top.svg';
-import Image3 from 'react-svg-loader!../public/images/react-logo.svg';
+
 
 class App extends Component {
 
   render() {
 
 
-    const header=(
-<div>
-    <nav>
-    <Image1 className="iron" width={50} height={50}></Image1>
-    <Image2 className="menu" width={50} height={50}></Image2>
-    </nav>
-</div>
-    );
+
+const header=(
+    <div>
+        <nav>
+        <img class="iron" src="images/ironhack-logo.svg"></img>
+        <img class="menu" src="images/menu-top.svg"></img>
+        </nav>
+    </div>
+        );
 
     const section1=(
         <div class="section1">
@@ -54,24 +53,23 @@ class App extends Component {
         </div>
     );
 
-    const react=(
-        <div>
-        <Image3 className="react" width={500} height={400}></Image3>
-        <Image3 className="react2" width={500} height={400}></Image3>
-        <Image3 className="react3" width={500} height={400}></Image3>
-        <Image3 className="react4" width={500} height={400}></Image3>
-        <Image3 className="react5" width={500} height={400}></Image3>
-        </div>
-    );
-
+const react=(
+    <div>
+    <img class="react" src="images/react-logo.svg"></img>
+    <img class="react2" src="images/react-logo.svg"></img>
+    <img class="react3" src="images/react-logo.svg"></img>
+    <img class="react4" src="images/react-logo.svg"></img>
+    <img class="react5" src="images/react-logo.svg"></img>
+    </div>
+);
 
     
 
 
     return (
       <div className="App">
-          {react}
           {header}
+          {react}
            {section1}
            {section2}
       </div>
